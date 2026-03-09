@@ -1,0 +1,108 @@
+FRONTEND
+npx create-react-app frontend --template typescript
+
+npx create-react-app frontend --template react
+
+npm create vite@latest . -- --template typescript
+
+npm create vite@latest frontend -- --template react
+npm create vite@latest . -- --template react   
+npm create vite@latest my-app -- --template react
+  npm install
+  npm run dev
+
+cd frontend
+npm install axios dayjs
+# Frontend dependencies (React)
+npm install react react-dom react-router-dom axios
+npm install @reduxjs/toolkit react-redux
+npm install recharts lucide-react
+npm install tailwindcss
+
+--------------------- rafce
+
+frontend/
+├── public/
+│   ├── favicon.ico               # Biểu tượng website
+│   └── index.html                # File HTML chính
+├── src/
+│   ├── assets/                   # Tài nguyên tĩnh (hình ảnh, font,...)
+│   │   ├── images/               # Thư mục chứa hình ảnh
+│   │   └── styles/               # Các file CSS tùy chỉnh (nếu cần)
+│   ├── components/               # Các component tái sử dụng
+│   │   ├── ProgressBar.jsx       # Component thanh tiến trình
+│   │   ├── Notification.jsx      # Component thông báo
+│   │   ├── RequestForm.jsx       # Component form tạo yêu cầu
+│   │   └── RequestList.jsx       # Component danh sách yêu cầu
+│   ├── layouts/                  # Các layout cho giao diện
+│   │   └── MainLayout.jsx        # Layout chính (header, container,...)
+│   ├── pages/                    # Các trang chính
+│   │   └── Home.jsx              # Trang chính chứa form và danh sách
+│   ├── hooks/                    # Custom hooks (nếu cần)
+│   │   └── useAuth.js           # Hook quản lý phân quyền
+│   ├── services/                 # API services
+│   │   └── api.js                # Hàm gọi API (axios)
+│   ├── context/                  # React Context cho state toàn cục
+│   │   └── AuthContext.jsx       # Context quản lý vai trò người dùng
+│   ├── App.jsx                   # Component chính
+│   ├── index.js                  # Entry point
+│   └── index.css                 # File CSS chính (Tailwind)
+├── tailwind.config.js            # Cấu hình Tailwind CSS
+├── package.json                  # Cấu hình dự án và dependencies
+└── vite.config.js                # Cấu hình Vite (build tool)
+
+
+src/
+  ├── redux/
+  │   ├── actions/
+  │   │   ├── authActions.js
+  │   │   ├── userActions.js
+  │   │   └── delegationActions.js
+  │   ├── reducers/
+  │   │   ├── authReducer.js
+  │   │   ├── userReducer.js
+  │   │   ├── delegationReducer.js
+  │   │   └── index.js
+  │   └── store.js
+
+
+
+BACKEND
+
+mkdir backend && cd backend
+
+mkdir server && cd server
+npm init -y
+
+# Backend dependencies
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+npm install express mongoose dotenv cors
+
+npm install --save-dev nodemon
+npm install -D nodemon
+
+npm init -y
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+npm install -D nodemon
+
+
+Example .gitignore Rules
+
+Here are some common patterns you might include in a .gitignore file:
+
+Ignore all log files: *.log
+
+Ignore a specific directory: temp/
+
+Ignore all files with a specific extension: *.tmp
+
+Ignore all files in a specific directory: /build/
+
+Ignore all files except one: *.md !README.md
+Ignoring Previously Committed Files
+If you want to ignore a file that has already been committed, you need to untrack it first:
+git rm --cached FILENAME
+
+
+
+
